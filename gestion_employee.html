@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Gestiopn_Employé</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scal=1, user-scalable=no">
+    <link rel="stylesheet" href="codejs.css">
+</head>
+<body>
+    <div class="centre">
+        <div class="marquee">
+           <marquee direction="left">NOUS SOMMES A VOTRE DISPOSITION POUR LA CREATION DE VOTRE INTERFACE AFIN DE MIEU GERER VOS DONNEES.</marquee>
+        </div>
+        <hr>
+        <h1 id="titre">CRUD APPLICATION: GESTION DES EMPLYES</h1>
+        <p id="para1">Ci-dessous, vous avez une application pour la gestion des emplyés de votre entreprise.<br>
+        Vous avez la possiblité de d'enregistrer les coordonnées de vos employés avec le boutons submit;<br>
+        Vous pouvez modifier les informations de vos ouvriers en cliquant sur le lien Editer;<br>
+        Egalement vous pouvez supprimer les informations d'un employé avec un clic dessus du lien Supprimer.<br><br>
+        </p>
+        <p id="para2"><b>ATTENTION: <em>Pour pouvoir effectuer ou non l'action de la suppression,<br> veuillez lire attentivement la boite de confirmation.</em></b></p>
+    </div>
+    <hr>
+    <hr>
+    <hr>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nom Complet*</label><label class="validation-error hide" id="fullNameValidationError">Ce champs est obligatoire</label>
+                        
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Code Employé</label>
+                        <input type="text" name="CodEmp" id="CodEmp">
+                    </div>
+                    <div>
+                        <label>Salaire</label>
+                        <input type="text" name="salaire" id="salaire">
+                    </div>
+                    <div>
+                        <label>Ville</label>
+                        <input type="text" name="ville" id="ville">
+                    </div>
+                    <div class="form-action-buttons"  >
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="emplyeeList">
+                    <thead>
+                        <tr>
+                            <th>Nom Complet</th>
+                            <th>Code Employé</th>
+                            <th> Salaire</th>
+                            <th>Ville</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+            <p id="para">© Copyright DAMO DEV JavaScript.</p>
+        </div>
+        <script src="crud.js"></script>
+</body>
+</html>
