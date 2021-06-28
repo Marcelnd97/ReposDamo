@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Accordéon_App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scal=1, user-scalable=no">
+    <link rel="stylesheet" href="accordeon.css">
+</head>
+<body>
+<div class="container">
+    <h2>Didacticiel JavaScript sur les Accordéons</h2>
+    <div class="but">
+        <div class="but1">
+            <button onclick="bouton1();" class="accordion-item">Mode Sombre</button>
+        </div>
+        <div class="but2">
+            <button onclick="bouton2();" class="accordion-item">Mode Claire</button>
+        </div>
+    </div>
+    <div class="accordion">
+        <div class="accordion-item" id="text">
+            <button id="accordion-button-1" aria-expanded="false">
+                <span class="accordion-title">Qu'est-ce que la section FAQ?</span>
+                <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    FAQ signifie Foire aux questions. 
+                    La plupart des sites Web sur Internet utilisent souvent la section 
+                    FAQ pour répondre à quelques-unes des questions fréquemment posées.
+                    Par exemple, les utilisateurs peuvent avoir quelques questions sur 
+                    un produit alors que tous les autres utilisateurs peuvent avoir les mêmes questions. 
+                    Donc, dans ce cas, la section FAQ les aide à obtenir des réponses à leurs questions.  
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item" id="text">
+            <button id="accordion-button-2" aria-expanded="false">
+                <span class="accordion-title">Combien de questions ajouter dans la section FAQ ?</span>
+                <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    Un site Web typique contient environ 5 à 10 questions qui sont fréquemment posées. 
+                    Si votre site Web a plus de questions auxquelles il faut répondre,
+                    vous pouvez en ajouter autant que vous le souhaitez. 5-10 serait génial.
+                    J'ai fourni un didacticiel vidéo étape par étape ainsi que le code source 
+                    complet de la section accordéon FAQ dans cet article 
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item" id="text">
+            <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title">Comment créer une section FAQ en HTML ?</span>
+                <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    Créez un fichier index.html. Ajoutez toutes les balises html, head, title, body. 
+                    Suivez le code html ci-dessous pour compléter la partie html  
+                    Créez un conteneur principal. A l'intérieur du conteneur principal, 
+                    créez un autre conteneur avec la classe 'accordéon'. 
+                    Cela va contenir tous nos articles d'accordéon. À l'intérieur de l'accordéon, 
+                    créez 5 balises div d'élément d'accordéon. Et ajoutez le code suivant.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item" id="text">
+            <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title">Comment concevoir une section FAQ en CSS ?</span>
+                <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    Créez un fichier styles.css et liez-le à notre document html. 
+                    Il est maintenant temps d'ajouter du CSS. Suivez le code css ci-dessous pour compléter la partie CSS. 
+                    Pour le CSS, nous allons utiliser une police personnalisée importée de la police google. 
+                    Allez-y et commencez à taper le code CSS de haut en bas et commencez à observer les changements.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item" id="text"> 
+            <button id="accordion-button-5" aria-expanded="false">
+                <span class="accordion-title">FAQ Section Accordéon avec HTML CSS et JavaScript</span>
+                <span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+                <p>
+                    Ci-dessous, j'ai donné tout le code source nécessaire pour que vous puissiez le construire. 
+                    Vous pouvez également télécharger le code source complet de la section FAQ à partir du bouton de téléchargement au bas de cet article.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+<script src="accordeon.js"></script>
+</body>
+</html>
